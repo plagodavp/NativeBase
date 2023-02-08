@@ -59,7 +59,6 @@ class ListItem extends Component {
 }
 
 ListItem.propTypes = {
-  ...TouchableHighlight.propTypes,
   style: PropTypes.oneOfType([
     PropTypes.object,
     PropTypes.number,

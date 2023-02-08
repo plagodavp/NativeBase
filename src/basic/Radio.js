@@ -83,7 +83,6 @@ class Radio extends Component {
 }
 
 Radio.propTypes = {
-  ...TouchableOpacity.propTypes,
   selected: PropTypes.bool,
   standardStyle: PropTypes.bool
 };

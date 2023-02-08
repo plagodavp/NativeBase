@@ -27,7 +27,6 @@ class CardItem extends Component {
 }
 
 CardItem.propTypes = {
-  ...TouchableOpacity.propTypes,
   style: PropTypes.oneOfType([
     PropTypes.object,
     PropTypes.number,

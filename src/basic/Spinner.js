@@ -32,7 +32,6 @@ class Spinner extends Component {
 }
 
 Spinner.propTypes = {
-  ...ActivityIndicator.propTypes,
   color: PropTypes.string,
   inverse: PropTypes.bool
 };

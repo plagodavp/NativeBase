@@ -24,9 +24,7 @@ PickerNB.Item = createReactClass({
   }
 });
 
-PickerNB.propTypes = {
-  ...Picker.propTypes
-};
+PickerNB.propTypes = {};
 
 const StyledPickerNB = connectStyle(
   'NativeBase.PickerNB',

@@ -14,7 +14,6 @@ class Title extends Component {
 }
 
 Title.propTypes = {
-  ...Text.propTypes,
   style: PropTypes.oneOfType([
     PropTypes.object,
     PropTypes.number,

@@ -44,7 +44,6 @@ class Textarea extends Component {
 }
 
 Textarea.propTypes = {
-  ...TextInput.propTypes,
   style: PropTypes.oneOfType([
     PropTypes.object,
     PropTypes.number,

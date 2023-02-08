@@ -12,13 +12,12 @@ class Label extends Component {
 }
 
 Label.propTypes = {
-  ...Text.propTypes,
   style: PropTypes.oneOfType([
     PropTypes.object,
     PropTypes.number,
     PropTypes.array
   ]),
-  floatBack: PropTypes.number,
+  floatBack: PropTypes.number
 };
 
 const StyledLabel = connectStyle('NativeBase.Label', {}, mapPropsToStyleNames)(

@@ -7,12 +7,13 @@ import mapPropsToStyleNames from '../utils/mapPropsToStyleNames';
 
 class Subtitle extends Component {
   render() {
-    return <Text ref={c => (this._root = c)} numberOfLines={1} {...this.props} />;
+    return (
+      <Text ref={c => (this._root = c)} numberOfLines={1} {...this.props} />
+    );
   }
 }
 
 Subtitle.propTypes = {
-  ...Text.propTypes,
   style: PropTypes.oneOfType([
     PropTypes.object,
     PropTypes.number,

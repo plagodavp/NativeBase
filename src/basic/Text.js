@@ -31,7 +31,6 @@ class Text extends Component {
 }
 
 Text.propTypes = {
-  ...RNText.propTypes,
   uppercase: PropTypes.bool,
   style: PropTypes.oneOfType([
     PropTypes.object,

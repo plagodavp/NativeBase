@@ -88,7 +88,6 @@ class Icon extends Component {
 }
 
 Icon.propTypes = {
-  ...IconNB.propTypes,
   style: PropTypes.oneOfType([
     PropTypes.object,
     PropTypes.number,

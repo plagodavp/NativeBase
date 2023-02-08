@@ -10,9 +10,7 @@ class Switch extends Component {
   }
 }
 
-Switch.propTypes = {
-  ...Switch.propTypes
-};
+Switch.propTypes = {};
 
 const StyledSwitch = connectStyle(
   'NativeBase.Switch',

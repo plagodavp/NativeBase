@@ -33,7 +33,6 @@ class Input extends NativeBaseComponent {
 }
 
 Input.propTypes = {
-  ...TextInput.propTypes,
   style: PropTypes.oneOfType([
     PropTypes.object,
     PropTypes.number,

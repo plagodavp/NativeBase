@@ -54,7 +54,6 @@ class Gravatar extends NativeBaseComponent {
 }
 
 Gravatar.propTypes = {
-  ...Image.propTypes,
   email: PropTypes.string.isRequired,
   style: PropTypes.oneOfType([
     PropTypes.object,

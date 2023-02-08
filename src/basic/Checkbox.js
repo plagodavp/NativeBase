@@ -69,7 +69,6 @@ class CheckBox extends Component {
 }
 
 CheckBox.propTypes = {
-  ...TouchableOpacity.propTypes,
   style: PropTypes.oneOfType([
     PropTypes.object,
     PropTypes.number,

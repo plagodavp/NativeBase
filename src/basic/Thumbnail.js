@@ -12,7 +12,6 @@ class Thumbnail extends Component {
 }
 
 Thumbnail.propTypes = {
-  ...Image.propTypes,
   style: PropTypes.oneOfType([
     PropTypes.object,
     PropTypes.number,

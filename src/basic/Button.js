@@ -64,9 +64,9 @@ class Button extends Component {
         : React.Children.map(this.props.children, child =>
             child && child.type === Text
               ? React.cloneElement(child, {
-                uppercase: variables.buttonUppercaseAndroidText,
-                ...child.props
-              })
+                  uppercase: variables.buttonUppercaseAndroidText,
+                  ...child.props
+                })
               : child
           );
     if (
@@ -150,7 +150,6 @@ class Button extends Component {
 }
 
 Button.propTypes = {
-  ...TouchableOpacity.propTypes,
   style: PropTypes.oneOfType([
     PropTypes.object,
     PropTypes.number,

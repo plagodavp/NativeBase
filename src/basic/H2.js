@@ -22,7 +22,6 @@ const childrenType = function(props, propName, component) {
 };
 
 H2.propTypes = {
-  ...Text.propTypes,
   children: childrenType,
   style: PropTypes.oneOfType([
     PropTypes.object,
