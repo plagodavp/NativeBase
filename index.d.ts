@@ -2,6 +2,7 @@ declare module "native-base" {
 	import * as React from "react";
 	import * as ReactNative from "react-native";
 	import { KeyboardAwareScrollViewProps } from "react-native-keyboard-aware-scroll-view";
+	import {ReactElement} from "react";
 
 	type RnViewStyleProp = ReactNative.StyleProp<ReactNative.ViewStyle>;
 	type RnTextStyleProp = ReactNative.StyleProp<ReactNative.TextStyle>;
@@ -166,6 +167,7 @@ declare module "native-base" {
 			/**
              * The theme prop can be applied to any component of NativeBase.
              */
+			children?: ReactElement<any>
 			theme?: Object;
 			style?: RnViewStyleProp | Array<RnViewStyleProp>;
 		}
@@ -291,9 +293,9 @@ declare module "native-base" {
              * Array of data chunks to render iteratively.
              */
       dataArray?: Array<any>;
-      renderItem?: (	
-				item: any,	
-				index: string | number,	
+      renderItem?: (
+				item: any,
+				index: string | number,
 			) => React.ReactElement<any>;
 			renderRow?: (
 				rowData: any,
@@ -648,6 +650,7 @@ declare module "native-base" {
 
 		interface Label extends Testable {
 			style?: RnTextStyleProp;
+			children?: ReactElement<any>;
 		}
 		/**
          * see Widget Icon.js
@@ -832,6 +835,7 @@ declare module "native-base" {
 			last?: boolean;
 			picker?: boolean;
 			style?: RnViewStyleProp | Array<RnViewStyleProp>;
+			children?: ReactElement<any>;
 		}
 
 		interface Form extends Testable {
@@ -1169,10 +1173,10 @@ declare module "native-base" {
 	export class ActionSheet {
 		static show: (
 			configuration: {
-				options: string[] | Array<{ 
-					text: string, 
-					icon?: string, 
-					iconColor?: string, 
+				options: string[] | Array<{
+					text: string,
+					icon?: string,
+					iconColor?: string,
 					iconType?: "AntDesign" | "Entypo" | "EvilIcons" | "Feather" | "FontAwesome" | "FontAwesome5" | "Foundation" | "Ionicons" | "MaterialCommunityIcons" | "MaterialIcons" | "Octicons" | "SimpleLineIcons" | "Zocial",
 				}>;
 				cancelButtonIndex?: number;
