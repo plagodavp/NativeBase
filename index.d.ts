@@ -840,6 +840,7 @@ declare module "native-base" {
 
 		interface Form extends Testable {
 			style?: RnViewStyleProp | Array<RnViewStyleProp>;
+			children?: ReactNode
 		}
 
 		interface Fab extends Testable {
