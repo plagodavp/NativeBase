@@ -2,7 +2,7 @@ declare module "native-base" {
 	import * as React from "react";
 	import * as ReactNative from "react-native";
 	import { KeyboardAwareScrollViewProps } from "react-native-keyboard-aware-scroll-view";
-	import {ReactElement} from "react";
+	import {ReactNode} from "react";
 
 	type RnViewStyleProp = ReactNative.StyleProp<ReactNative.ViewStyle>;
 	type RnTextStyleProp = ReactNative.StyleProp<ReactNative.TextStyle>;
@@ -167,7 +167,7 @@ declare module "native-base" {
 			/**
              * The theme prop can be applied to any component of NativeBase.
              */
-			children?: ReactElement<any>
+			children?: ReactNode
 			theme?: Object;
 			style?: RnViewStyleProp | Array<RnViewStyleProp>;
 		}
@@ -650,7 +650,7 @@ declare module "native-base" {
 
 		interface Label extends Testable {
 			style?: RnTextStyleProp;
-			children?: ReactElement<any>;
+			children?: ReactNode;
 		}
 		/**
          * see Widget Icon.js
@@ -835,7 +835,7 @@ declare module "native-base" {
 			last?: boolean;
 			picker?: boolean;
 			style?: RnViewStyleProp | Array<RnViewStyleProp>;
-			children?: ReactElement<any>;
+			children?: ReactNode;
 		}
 
 		interface Form extends Testable {
